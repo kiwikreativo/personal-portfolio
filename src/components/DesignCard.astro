@@ -1,0 +1,25 @@
+---
+const { imageSrc, imageAlt, tag, title, description, tags } = Astro.props;
+---
+
+<div class="group flex flex-col md:flex-row bg-surface-container-high/50 rounded-xl overflow-hidden transition-all hover:bg-surface-container-high">
+  <div class="w-full md:w-1/2 p-12 flex items-center justify-center bg-secondary-container/20">
+    <div class="relative w-full max-w-[240px] transform group-hover:-translate-y-2 transition-transform duration-500">
+      <img
+        alt={imageAlt}
+        class="rounded-3xl shadow-2xl"
+        src={imageSrc}
+      />
+    </div>
+  </div>
+  <div class="w-full md:w-1/2 p-10 flex flex-col justify-center">
+    <span class="font-label-caps text-label-caps text-secondary mb-4 uppercase tracking-widest">{tag}</span>
+    <h3 class="font-h2 text-h2 text-on-surface mb-4">{title}</h3>
+    <p class="font-body-md text-body-md text-on-surface-variant mb-6">{description}</p>
+    <div class="flex gap-4">
+      {tags.map(tag => (
+        <span class="px-3 py-1 bg-white rounded-full text-xs font-semibold text-secondary shadow-sm">{tag}</span>
+      ))}
+    </div>
+  </div>
+</div>

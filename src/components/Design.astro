@@ -1,0 +1,36 @@
+---
+import DesignCard from "./DesignCard.astro";
+
+const designs = [
+  {
+    imageSrc: "https://lh3.googleusercontent.com/aida-public/AB6AXuDjoEA2rkfHl1SBy_n2PVuNaIys-ZuNw0AhHhpD2245_-HqJE1ConjarvcU_cWwe9QSzhgzmbVgFbZ4UgOEGbkH9AhAk45pSQZIRcoM4PF1nT-8qYbA4ITC0ITWyM4qBq20cQP_5WnhGHbAUdTunbBQ50eFgHqhm6lYrpbnB3JG3a0JY9j2l66MzF_o3U4lY9Rnuv8PhQdGalF2q49O7UEFSyInEF_ghv1HpNwmN320sWnDzTj2OhA7dKG3yfNJz2grAjYhwJMAnlA0",
+    imageAlt: "Bloom Mobile",
+    tag: "Mobile Experience",
+    title: "Bloom Care",
+    description: "Redefining plant parenthood through predictive scheduling and an intuitive community marketplace.",
+    tags: ["Figma", "User Research"]
+  },
+  {
+    imageSrc: "https://lh3.googleusercontent.com/aida-public/AB6AXuB5pn-72taLnY2r0Rbgc3cqksnQN1aWrBUQnQs_spcz7vkGUe7OeDeEpQC1WI8FJgOMbKspHfYntLrmF_ZN51Ooi9JzqGjpQZuVS1SXVTEu6ciluexvSNowyZRlAPhjoRXK7d8ea5Cv7U_XNuOBolmlRjyeVIuQ26y0zI4Cc3v9tETQDtk0ajiIf_FlyVICUGWBiHs5nSjAQKSwBhX8xoe9TwJ3tCRgfSy09PpiaaG2F-m-61aZur2wIWqLh0aCtqpnZ-IfPFu2DeNK",
+    imageAlt: "Elevate Platform",
+    tag: "EdTech SaaS",
+    title: "Elevate Platform",
+    description: "A holistic learning management system designed to reduce administrative friction for educators.",
+    tags: ["Interaction Design", "Accessibility"]
+  }
+];
+---
+
+<section class="py-[120px] bg-surface">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="mb-16 text-right">
+      <span class="font-label-caps text-label-caps text-primary mb-2 block tracking-widest">DESIGN SYSTEMS</span>
+      <h2 class="font-display text-display text-on-surface">UX Design</h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-stack-gap">
+      {designs.map(design => (
+        <DesignCard {...design} />
+      ))}
+    </div>
+  </div>
+</section>
