@@ -1,35 +1,46 @@
-# My Portfolio Website!
+# Astro Starter Kit: Basics
 
-This is my beginner portfolio website built in HTML & CSS only.
+```sh
+pnpm create astro@latest -- --template basics
+```
 
-## Features ✨
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-- Responsive design 📱
-- HTML/CSS only 🖥️
-- Leave a message (coming soon!) 💬
+## 🚀 Project Structure
 
-## How to Run 🚀
+Inside of your Astro project, you'll see the following folders and files:
 
-1. Clone this repository: `git clone https://github.com/stephanieran/personal-portfolio.git`  
-2. Open `index.html` in your browser.
+```text
+/
+├── public/
+│   └── favicon.svg
+├── src
+│   ├── assets
+│   │   └── astro.svg
+│   ├── components
+│   │   └── Welcome.astro
+│   ├── layouts
+│   │   └── Layout.astro
+│   └── pages
+│       └── index.astro
+└── package.json
+```
 
-## Image Guidelines
+To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
 
-To maintain optimal website performance:
-- All images should be optimized before committing
-- Maximum image dimensions: 800x800 pixels
-- Use WebP format with PNG/JPG fallback
-- Maximum file size: 200KB for photos, 100KB for screenshots
-- Use TinyPNG/TinyJPG or ImageMagick for optimization
+## 🧞 Commands
 
-To optimize new images:
-1. Run `./optimize-images.sh` (requires ImageMagick)
-2. Use `<picture>` element with WebP and fallback in HTML
+All commands are run from the root of the project, from a terminal:
 
-## License 📄
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `pnpm install`             | Installs dependencies                            |
+| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
+| `pnpm build`           | Build your production site to `./dist/`          |
+| `pnpm preview`         | Preview your build locally, before deploying     |
+| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `pnpm astro -- --help` | Get help using the Astro CLI                     |
 
-This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
+## 👀 Want to learn more?
 
-## Contact 📧
-
-Created by [Steph Ran](https://stephanieran.github.io/personal-portfolio/) - feel free to reach out!!
+Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
