@@ -1,0 +1,80 @@
+---
+import DesignCard from "./DesignCard.astro";
+
+import Tissuepatch from "../assets/tissue-patch.webp";
+import TwelveYearWeek from "../assets/twelve-week-year.webp";
+import MPCSRedesign from "../assets/mpcs-redesign.webp";
+import WastedOcean from "../assets/wasted-ocean.webp";
+import JobSearchApp from "../assets/job-seaerch-design.webp";
+import Lunisolar from "../assets/lunisolar.webp";
+const designs = [
+  {
+    imageSrc: Tissuepatch.src,
+    imageAlt: "3D Bioprinted Mold",
+    tag: "OnShape, Lumen x Bioprinter",
+    title: "3D Bioprinted Mold",
+    description: "Redefining plant parenthood through predictive scheduling and an intuitive community marketplace.",
+    tags: ["Group Research"],
+    link: "https://hibinolab.com/"
+  },
+  {
+    imageSrc: TwelveYearWeek.src,
+    imageAlt: "12 Year Week",
+    tag: "Figma",
+    title: "12 Year Week",
+    description: "I created a prototype for a mobile self improvement application based on principles from the book 12 week year.",
+    tags: ["User Research", "Prototyping"],
+    link: "https://www.figma.com/design/LbgAdL6kVLjecPz1XYQLRs/12weekyear?node-id=0-1&p=f"
+  },
+  {
+    imageSrc: MPCSRedesign.src,
+    imageAlt: "MPCS Redesign",
+    tag: "Figma",
+    title: "MPCS Redesign",
+    description: "I redesigned the website to make it simpler and more enjoyable to use.",
+    tags: ["UI/UX intuitive", "Suitable"],
+    link: "https://www.figma.com/design/dgGOVpe334IiQeQ48oHi7n/Course-Registration?node-id=0-1&p=f&t=1DJRWMw4xOXlk2TY-0"
+  },
+  {
+    imageSrc: WastedOcean.src,
+    imageAlt: "Wasted Ocean",
+    tag: "Final Cut Pro X",
+    title: "Wasted Ocean",
+    description: "I spearheaded the installation of Wasted Ocean, a mural of ocean life made entirely from student waste.",
+    tags: ["Video Editing", "Recycled Art"],
+    link: "https://youtu.be/9gVfe0mJjMQ"
+  },
+  {
+    imageSrc: JobSearchApp.src,
+    imageAlt: "Job Search App",
+    tag: "Figma",
+    title: "Job Search App",
+    description: "I designed a simple native job search iOS app targeted towards new grads.",
+    tags: ["UI/UX Design", "Prototyping"],
+    link: "https://www.figma.com/design/ldmrdlXEzcKOQCGWQD9hzG/Assignment-5---Native-App-with-Retention?node-id=0-1&p=f&t=SH0RlarLtnl9onec-0"
+  },
+  {
+    imageSrc: Lunisolar.src,
+    imageAlt: "LuniSolar",
+    tag: "Figma",
+    title: "LuniSolar",
+    description: "I designed a simple recipe website page inspired by the Lunar New Year.",
+    tags: ["UI/UX Design", "Prototyping"],
+    link: "https://www.figma.com/design/ugfzGq3DAgZKZX5YzDI2vE/RecipeWebsite?node-id=0-1&p=f&t=aRh6L1fb70qqi10w-0"
+  },
+];
+---
+
+<section class="py-[120px] bg-surface">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="mb-16 text-right">
+      <span class="font-label-caps text-label-caps text-primary mb-2 block tracking-widest">DESIGN SYSTEMS</span>
+      <h2 class="font-display text-display text-on-surface">UX Design</h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-stack-gap">
+      {designs.map(design => (
+        <DesignCard {...design} />
+      ))}
+    </div>
+  </div>
+</section>

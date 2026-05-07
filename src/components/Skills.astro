@@ -1,0 +1,28 @@
+---
+import SkillChip from "./SkillChip.astro";
+
+
+
+const skills = [
+  { icon: "fa-brands fa-python", label: "Python" },
+  { icon: "fa-brands fa-java", label: "Java" },
+  { icon: "fa-brands fa-swift", label: "Swift" },
+  { icon: "fa-brands fa-figma", label: "Figma" },
+  { icon: "fa-solid fa-database", label: "SQL" },
+  { icon: "fa-brands fa-git-alt", label: "Git" },
+  { icon: "fa-brands fa-github-alt", label: "Github" },
+  { icon: "fa-brands fa-aws", label: "AWS" }
+];
+---
+
+<section class="py-[120px] max-w-7xl mx-auto px-6 overflow-hidden" id="skills">
+  <div class="flex flex-col items-center mb-16">
+    <h2 class="font-display text-display text-on-surface mb-4">The Toolkit</h2>
+    <div class="h-1 w-20 bg-primary-container rounded-full"></div>
+  </div>
+  <div class="flex flex-wrap justify-center gap-4">
+    {skills.map(skill => (
+      <SkillChip {...skill} />
+    ))}
+  </div>
+</section>
