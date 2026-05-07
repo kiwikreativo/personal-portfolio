@@ -1,27 +1,47 @@
+---
+ import Profilepic from './../assets/headshot.webp'
+---
+
+
 <section class="py-[120px] px-6 max-w-7xl mx-auto flex flex-col items-center text-center" id="about">
   <div class="relative mb-8 p-1.5 rounded-full border-4 border-primary-container/30">
     <img
       alt="Steph Ran Profile"
-      class="w-48 h-48 rounded-full object-cover shadow-xl"
-      src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnkU5lQXjkNal-RrooAFJ1WVUK01bF9gKYr8150Ai_u4FUH1bVj7kloQvhcGRco6jgnQG_GOY0ltLT5-EKKUUZKiZu3wKFoapgm4lbgC5alZETIzN6L_I8i_heL0K-BYw7j20HrLGoI_toovqsRPsoqQgcP_vLs2t7XEOBkDPbLf9Yic6vkOx2sqrSQgHdB5rZFB82-hGU1gfLTMkmz1i_PFl_FU89zmInmQTLLq3lw_DayBYMzAQDQaCuSPftZmzxtajn_glXAaTB"
+      class="w-48 h-48 rounded-full object-cover shadow-xl pic"
+      src={Profilepic.src}
     />
   </div>
   <h1 class="font-display text-display text-on-surface mb-6">Hey World, I'm Steph!</h1>
-  <p class="max-w-2xl font-body-lg text-body-lg text-on-surface-variant mb-10 leading-relaxed">
+  <p class="max-w-xl font-body-lg text-body-lg text-on-surface-variant mb-10 leading-relaxed">
     A UChicago graduate specializing in software engineering and human-centered design. I build technical solutions that don't just work—they feel right. Currently bridging the gap between clean code and empathetic user experiences.
   </p>
   <div class="flex gap-6 items-center">
-    <a class="w-12 h-12 flex items-center justify-center rounded-full bg-surface-container hover:bg-primary-container transition-colors duration-200 text-primary" href="#">
-      <span class="material-symbols-outlined">share</span>
+    <a class="w-14 h-14 flex items-center justify-center rounded-full bg-surface-container hover:bg-primary-container transition-colors duration-200 text-primary" href="https://www.instagram.com/stephranaway/">
+      <i class="fa-brands fa-instagram"></i>
     </a>
-    <a class="w-12 h-12 flex items-center justify-center rounded-full bg-surface-container hover:bg-primary-container transition-colors duration-200 text-primary" href="#">
-      <span class="material-symbols-outlined">videocam</span>
+    <a class="w-12 h-12 flex items-center justify-center rounded-full bg-surface-container hover:bg-primary-container transition-colors duration-200 text-primary" href="https://www.youtube.com/@stephranaway">
+      <i class="fa-brands fa-youtube"></i>
     </a>
-    <a class="w-12 h-12 flex items-center justify-center rounded-full bg-surface-container hover:bg-primary-container transition-colors duration-200 text-primary" href="#">
-      <span class="material-symbols-outlined">terminal</span>
+    <a class="w-12 h-12 flex items-center justify-center rounded-full bg-surface-container hover:bg-primary-container transition-colors duration-200 text-primary" href="https://www.linkedin.com/in/stephanieran/">
+      <i class="fa-brands fa-linkedin"></i>
     </a>
-    <a class="w-12 h-12 flex items-center justify-center rounded-full bg-surface-container hover:bg-primary-container transition-colors duration-200 text-primary" href="#">
-      <span class="material-symbols-outlined">code</span>
+    <a class="w-12 h-12 flex items-center justify-center rounded-full bg-surface-container hover:bg-primary-container transition-colors duration-200 text-primary" href="https://github.com/stephranaway">
+      <i class="fa-brands fa-github"></i>
     </a>
   </div>
 </section>
+
+<style>
+  .fa-brands {
+    font-size: 1.40rem;
+  }
+
+  .pic {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .pic:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+</style>

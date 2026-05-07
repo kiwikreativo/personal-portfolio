@@ -1,28 +1,52 @@
 ---
 import ProjectCard from "./ProjectCard.astro";
+import FloppyFishImage from "../assets/floppy-fish.webp";
+import CirclesImage from "../assets/circles.webp";
+import GithubIssuesImage from "../assets/github issues.webp";
+import ChibiLuffyImage from "../assets/chibi-luffy.webp";
+import FunctionalAdventureImage from "../assets/haskell-text-game.webp";
 
 const projects = [
   {
-    imageSrc: "https://lh3.googleusercontent.com/aida-public/AB6AXuDuuoHtemP0Fi96lAt2pMGsokR-nOY5mkEvXRUqcvjive282gfpQidLDHQHFA7lRHabo8UxSX9DuJ4S05zELQcf2V-vSI4mheS0l-C1VglGzZhJtUi79-3JLosmnhXQFgTIqN_69TRdOJT3TrxZ6fcLsSKxKHxHk0gcwX2llL7K9f8eNWxCR5zlxxMCQYPNmSg7chY185smOcw6T2eCE89BmY2iJCRQ9-ItAbEbkjGzMeRQ2hNa9krRYy2ZMyDQDKSt0EZDsRN3q1mB",
-    imageAlt: "HealthTrack Pro",
-    tag: "SWIFT + FIREBASE",
-    title: "HealthTrack Pro",
-    description: "A real-time vitals monitoring system utilizing IoT integration and cloud-based analytics for outpatient care."
+    imageSrc: FloppyFishImage.src,
+    imageAlt: "Floppy Fish",
+    tag: "Java",
+    title: "Floppy Fish",
+    description: "Floppy fish is a spinoff Flappy bird, built in Java. Instead of gravity pulling the bird down, the buoyancy of the water pushes the fish up",
+    link: "https://github.com/stephanieran/floppy-fish"
   },
   {
-    imageSrc: "https://lh3.googleusercontent.com/aida-public/AB6AXuDgEvQZsc1mE_ABQdgE9Qj5Zosqg2cHHUO0CMbesEAODst6t4P4mOyHrMRdu-bngN8pddqDkmr2nn8A2yM4OaYJzzqlco8PT_CNmRlwedOVg5RHTMp527KQh3ACWmBhMmdRx_OtzZgTCwDZLuommFmwYIz5-0iUwKsV8pWuLBxFbfMv25N-S1bqeIuolvD-C4dxZY-nw-fgnQDv6WRDRhFnMQVI3I3GLdMUQSWo0A2ziX_jgM4K8sVz4tVAo9ThGs_Ku2h0SNSoED-T",
-    imageAlt: "CloudScale Engine",
-    tag: "GO + KUBERNETES",
-    title: "CloudScale Engine",
-    description: "Distributed system orchestrator focused on horizontal scaling for high-traffic e-commerce APIs during peak loads."
+    imageSrc: CirclesImage.src,
+    imageAlt: "Circles",
+    tag: "Swift + Firebase",
+    title: "Circles",
+    description: "Circles is a photo sharing app with daily prompts to encourage small groups of families and friends to stay in touch.",
+    link: "https://github.com/stephanieran/circles"
   },
   {
-    imageSrc: "https://lh3.googleusercontent.com/aida-public/AB6AXuB8vg-hI-o0yk9dDatRjstTLoNiY_HTEnK2TEmdqsj27osVoAUR4vWuRwJAdJv3uhpzHPS6_NeoWnKeZgh2sbZrnYm-PtnhJVmEhVrfvNJVF9LXusuzeetoPsRN1oKH53Evj5cORMZ2D5OGwA-MucNp1WMMZtwyjozAozZVc3nwIXj90C12_5pPUcrOHn63msXttdk6ffFXOVGuIitO8f_4chaPkTYfbhgM2WiBXd1G-oZ9BOC4wyqGjS74ojJquOBsK05HgmF30PiX",
-    imageAlt: "SecureAuth API",
-    tag: "PYTHON + FASTAPI",
-    title: "SecureAuth API",
-    description: "Enterprise-grade authentication wrapper with multi-layer encryption and biometrics support for mobile SDKs."
-  }
+    imageSrc: GithubIssuesImage.src,
+    imageAlt: "Github Issues",
+    tag: "Swift + Github REST API",
+    title: "Github Issues",
+    description: "Github Issues is an iOS mobile application to streamline open/closed GitHub Issues posted in popular open-source repos for simple access.",
+    link: "https://github.com/stephanieran/github-issues"
+  },
+  {
+    imageSrc: ChibiLuffyImage.src,
+    imageAlt: "Chibi Luffy",
+    tag: "Swift + Github REST API",
+    title: "Chibi Luffy",
+    description: "Chibi Luffy is an Instagram bot that reposts anime memes scraped from Reddit.",
+    link: "https://github.com/stephanieran/chibi-luffy"
+  },
+  {
+    imageSrc: FunctionalAdventureImage.src,
+    imageAlt: "Functional Adventure",
+    tag: "Haskell",
+    title: "Functional Adventure",
+    description: "Functional adventure is a text-based adventure game with the goal of traversing the map to find a specific item.",
+    link: "https://github.com/stephanieran/functional-adventure"
+  },
 ];
 ---
 
